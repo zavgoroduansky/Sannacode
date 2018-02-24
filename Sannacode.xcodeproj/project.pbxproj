@@ -1,0 +1,561 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FC12AD1B204155F8004B1913 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC12AD1A204155F8004B1913 /* AppDelegate.swift */; };
+		FC12AD1D204155F8004B1913 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC12AD1C204155F8004B1913 /* MasterViewController.swift */; };
+		FC12AD1F204155F8004B1913 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC12AD1E204155F8004B1913 /* DetailViewController.swift */; };
+		FC12AD22204155F8004B1913 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC12AD20204155F8004B1913 /* Main.storyboard */; };
+		FC12AD24204155F8004B1913 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC12AD23204155F8004B1913 /* Assets.xcassets */; };
+		FC12AD27204155F8004B1913 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC12AD25204155F8004B1913 /* LaunchScreen.storyboard */; };
+		FC12AD32204155F8004B1913 /* SannacodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC12AD31204155F8004B1913 /* SannacodeTests.swift */; };
+		FC12AD3D204155F9004B1913 /* SannacodeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC12AD3C204155F9004B1913 /* SannacodeUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FC12AD2E204155F8004B1913 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FC12AD0F204155F8004B1913 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FC12AD16204155F8004B1913;
+			remoteInfo = Sannacode;
+		};
+		FC12AD39204155F9004B1913 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FC12AD0F204155F8004B1913 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FC12AD16204155F8004B1913;
+			remoteInfo = Sannacode;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FC12AD17204155F8004B1913 /* Sannacode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sannacode.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC12AD1A204155F8004B1913 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FC12AD1C204155F8004B1913 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		FC12AD1E204155F8004B1913 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		FC12AD21204155F8004B1913 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FC12AD23204155F8004B1913 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FC12AD26204155F8004B1913 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FC12AD28204155F8004B1913 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC12AD2D204155F8004B1913 /* SannacodeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SannacodeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC12AD31204155F8004B1913 /* SannacodeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SannacodeTests.swift; sourceTree = "<group>"; };
+		FC12AD33204155F8004B1913 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC12AD38204155F9004B1913 /* SannacodeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SannacodeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC12AD3C204155F9004B1913 /* SannacodeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SannacodeUITests.swift; sourceTree = "<group>"; };
+		FC12AD3E204155F9004B1913 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FC12AD14204155F8004B1913 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC12AD2A204155F8004B1913 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC12AD35204155F9004B1913 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FC12AD0E204155F8004B1913 = {
+			isa = PBXGroup;
+			children = (
+				FC12AD19204155F8004B1913 /* Sannacode */,
+				FC12AD30204155F8004B1913 /* SannacodeTests */,
+				FC12AD3B204155F9004B1913 /* SannacodeUITests */,
+				FC12AD18204155F8004B1913 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FC12AD18204155F8004B1913 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FC12AD17204155F8004B1913 /* Sannacode.app */,
+				FC12AD2D204155F8004B1913 /* SannacodeTests.xctest */,
+				FC12AD38204155F9004B1913 /* SannacodeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FC12AD19204155F8004B1913 /* Sannacode */ = {
+			isa = PBXGroup;
+			children = (
+				FC12AD1A204155F8004B1913 /* AppDelegate.swift */,
+				FC12AD1C204155F8004B1913 /* MasterViewController.swift */,
+				FC12AD1E204155F8004B1913 /* DetailViewController.swift */,
+				FC12AD20204155F8004B1913 /* Main.storyboard */,
+				FC12AD23204155F8004B1913 /* Assets.xcassets */,
+				FC12AD25204155F8004B1913 /* LaunchScreen.storyboard */,
+				FC12AD28204155F8004B1913 /* Info.plist */,
+			);
+			path = Sannacode;
+			sourceTree = "<group>";
+		};
+		FC12AD30204155F8004B1913 /* SannacodeTests */ = {
+			isa = PBXGroup;
+			children = (
+				FC12AD31204155F8004B1913 /* SannacodeTests.swift */,
+				FC12AD33204155F8004B1913 /* Info.plist */,
+			);
+			path = SannacodeTests;
+			sourceTree = "<group>";
+		};
+		FC12AD3B204155F9004B1913 /* SannacodeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FC12AD3C204155F9004B1913 /* SannacodeUITests.swift */,
+				FC12AD3E204155F9004B1913 /* Info.plist */,
+			);
+			path = SannacodeUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FC12AD16204155F8004B1913 /* Sannacode */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC12AD41204155F9004B1913 /* Build configuration list for PBXNativeTarget "Sannacode" */;
+			buildPhases = (
+				FC12AD13204155F8004B1913 /* Sources */,
+				FC12AD14204155F8004B1913 /* Frameworks */,
+				FC12AD15204155F8004B1913 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Sannacode;
+			productName = Sannacode;
+			productReference = FC12AD17204155F8004B1913 /* Sannacode.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FC12AD2C204155F8004B1913 /* SannacodeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC12AD44204155F9004B1913 /* Build configuration list for PBXNativeTarget "SannacodeTests" */;
+			buildPhases = (
+				FC12AD29204155F8004B1913 /* Sources */,
+				FC12AD2A204155F8004B1913 /* Frameworks */,
+				FC12AD2B204155F8004B1913 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FC12AD2F204155F8004B1913 /* PBXTargetDependency */,
+			);
+			name = SannacodeTests;
+			productName = SannacodeTests;
+			productReference = FC12AD2D204155F8004B1913 /* SannacodeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FC12AD37204155F9004B1913 /* SannacodeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC12AD47204155F9004B1913 /* Build configuration list for PBXNativeTarget "SannacodeUITests" */;
+			buildPhases = (
+				FC12AD34204155F9004B1913 /* Sources */,
+				FC12AD35204155F9004B1913 /* Frameworks */,
+				FC12AD36204155F9004B1913 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FC12AD3A204155F9004B1913 /* PBXTargetDependency */,
+			);
+			name = SannacodeUITests;
+			productName = SannacodeUITests;
+			productReference = FC12AD38204155F9004B1913 /* SannacodeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FC12AD0F204155F8004B1913 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Завгородянський Олег";
+				TargetAttributes = {
+					FC12AD16204155F8004B1913 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					FC12AD2C204155F8004B1913 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FC12AD16204155F8004B1913;
+					};
+					FC12AD37204155F9004B1913 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FC12AD16204155F8004B1913;
+					};
+				};
+			};
+			buildConfigurationList = FC12AD12204155F8004B1913 /* Build configuration list for PBXProject "Sannacode" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FC12AD0E204155F8004B1913;
+			productRefGroup = FC12AD18204155F8004B1913 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FC12AD16204155F8004B1913 /* Sannacode */,
+				FC12AD2C204155F8004B1913 /* SannacodeTests */,
+				FC12AD37204155F9004B1913 /* SannacodeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FC12AD15204155F8004B1913 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC12AD27204155F8004B1913 /* LaunchScreen.storyboard in Resources */,
+				FC12AD24204155F8004B1913 /* Assets.xcassets in Resources */,
+				FC12AD22204155F8004B1913 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC12AD2B204155F8004B1913 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC12AD36204155F9004B1913 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FC12AD13204155F8004B1913 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC12AD1F204155F8004B1913 /* DetailViewController.swift in Sources */,
+				FC12AD1D204155F8004B1913 /* MasterViewController.swift in Sources */,
+				FC12AD1B204155F8004B1913 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC12AD29204155F8004B1913 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC12AD32204155F8004B1913 /* SannacodeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC12AD34204155F9004B1913 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC12AD3D204155F9004B1913 /* SannacodeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FC12AD2F204155F8004B1913 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FC12AD16204155F8004B1913 /* Sannacode */;
+			targetProxy = FC12AD2E204155F8004B1913 /* PBXContainerItemProxy */;
+		};
+		FC12AD3A204155F9004B1913 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FC12AD16204155F8004B1913 /* Sannacode */;
+			targetProxy = FC12AD39204155F9004B1913 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FC12AD20204155F8004B1913 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC12AD21204155F8004B1913 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FC12AD25204155F8004B1913 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC12AD26204155F8004B1913 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FC12AD3F204155F9004B1913 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FC12AD40204155F9004B1913 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FC12AD42204155F9004B1913 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Sannacode/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zavo.Sannacode;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FC12AD43204155F9004B1913 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Sannacode/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zavo.Sannacode;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FC12AD45204155F9004B1913 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SannacodeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zavo.SannacodeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sannacode.app/Sannacode";
+			};
+			name = Debug;
+		};
+		FC12AD46204155F9004B1913 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SannacodeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zavo.SannacodeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sannacode.app/Sannacode";
+			};
+			name = Release;
+		};
+		FC12AD48204155F9004B1913 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SannacodeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zavo.SannacodeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Sannacode;
+			};
+			name = Debug;
+		};
+		FC12AD49204155F9004B1913 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SannacodeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zavo.SannacodeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Sannacode;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FC12AD12204155F8004B1913 /* Build configuration list for PBXProject "Sannacode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC12AD3F204155F9004B1913 /* Debug */,
+				FC12AD40204155F9004B1913 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC12AD41204155F9004B1913 /* Build configuration list for PBXNativeTarget "Sannacode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC12AD42204155F9004B1913 /* Debug */,
+				FC12AD43204155F9004B1913 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC12AD44204155F9004B1913 /* Build configuration list for PBXNativeTarget "SannacodeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC12AD45204155F9004B1913 /* Debug */,
+				FC12AD46204155F9004B1913 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC12AD47204155F9004B1913 /* Build configuration list for PBXNativeTarget "SannacodeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC12AD48204155F9004B1913 /* Debug */,
+				FC12AD49204155F9004B1913 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FC12AD0F204155F8004B1913 /* Project object */;
+}
