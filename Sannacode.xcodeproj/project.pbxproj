@@ -18,7 +18,7 @@
 		FC12AD27204155F8004B1913 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC12AD25204155F8004B1913 /* LaunchScreen.storyboard */; };
 		FC12AD32204155F8004B1913 /* SannacodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC12AD31204155F8004B1913 /* SannacodeTests.swift */; };
 		FC12AD3D204155F9004B1913 /* SannacodeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC12AD3C204155F9004B1913 /* SannacodeUITests.swift */; };
-		FC395D952041B6A0001516F8 /* SCRemoteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC395D942041B6A0001516F8 /* SCRemoteManager.swift */; };
+		FC395D952041B6A0001516F8 /* RemoteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC395D942041B6A0001516F8 /* RemoteManager.swift */; };
 		FFCFC6A55F8103D71D9E65BF /* Pods_SannacodeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4D78E936039CF47546F62B8 /* Pods_SannacodeUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -64,7 +64,7 @@
 		FC12AD38204155F9004B1913 /* SannacodeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SannacodeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC12AD3C204155F9004B1913 /* SannacodeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SannacodeUITests.swift; sourceTree = "<group>"; };
 		FC12AD3E204155F9004B1913 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FC395D942041B6A0001516F8 /* SCRemoteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCRemoteManager.swift; sourceTree = "<group>"; };
+		FC395D942041B6A0001516F8 /* RemoteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,7 +129,7 @@
 		FC12822A2041A0CE005B56F1 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				FC395D942041B6A0001516F8 /* SCRemoteManager.swift */,
+				FC395D942041B6A0001516F8 /* RemoteManager.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -487,7 +487,7 @@
 				FC12AD1F204155F8004B1913 /* DetailViewController.swift in Sources */,
 				FC12AD1D204155F8004B1913 /* MasterViewController.swift in Sources */,
 				FC12AD1B204155F8004B1913 /* AppDelegate.swift in Sources */,
-				FC395D952041B6A0001516F8 /* SCRemoteManager.swift in Sources */,
+				FC395D952041B6A0001516F8 /* RemoteManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

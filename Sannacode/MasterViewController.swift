@@ -10,17 +10,19 @@ import UIKit
 
 class MasterViewController: UITableViewController {
 
+    static let chunkSize = 20
+    
     var detailViewController: DetailViewController? = nil
-    var objects = [Any]()
-
+    var dataSource = [Crypto]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        navigationItem.leftBarButtonItem = editButtonItem
 
-        let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(insertNewObject(_:)))
-        navigationItem.rightBarButtonItem = addButton
+        loadObjects(start: 0)
+        
+        tableView.refreshControl = UIRefreshControl()
+        tableView.refreshControl!.addTarget(self, action: #selector(self.forceUpdateTable(_:)), for: .valueChanged)
+        
         if let split = splitViewController {
             let controllers = split.viewControllers
             detailViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? DetailViewController
@@ -37,19 +39,12 @@ class MasterViewController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    @objc
-    func insertNewObject(_ sender: Any) {
-        objects.insert(NSDate(), at: 0)
-        let indexPath = IndexPath(row: 0, section: 0)
-        tableView.insertRows(at: [indexPath], with: .automatic)
-    }
-
     // MARK: - Segues
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showDetail" {
             if let indexPath = tableView.indexPathForSelectedRow {
-                let object = objects[indexPath.row] as! NSDate
+                let object = dataSource[indexPath.row]
                 let controller = (segue.destination as! UINavigationController).topViewController as! DetailViewController
                 controller.detailItem = object
                 controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
@@ -65,31 +60,61 @@ class MasterViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return objects.count
+        return dataSource.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
 
-        let object = objects[indexPath.row] as! NSDate
-        cell.textLabel!.text = object.description
+        if dataSource.count > indexPath.row {
+            configureCell(cell: cell, object: dataSource[indexPath.row])
+            if indexPath.row == dataSource.count-1 {
+                loadObjects(start: dataSource.count)
+            }
+        }
+
         return cell
     }
 
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            objects.remove(at: indexPath.row)
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
+    // MARK: - Private methods
+    
+    func loadObjects(start from: Int) {
+        RemoteManager().fetchCrypto(from: from, limit: MasterViewController.chunkSize) { (cryptoArray, errorString) in
+            if errorString != "" {
+                let alert = UIAlertController(title: "Error", message: errorString, preferredStyle: UIAlertControllerStyle.alert)
+                alert.addAction(UIAlertAction(title: "Close", style: UIAlertActionStyle.default, handler: nil))
+                self.present(alert, animated: true, completion: nil)
+            } else {
+                self.dataSource += cryptoArray
+                
+                if from == 0 {
+                    self.tableView.reloadData()
+                } else {
+                    var indexArray = [IndexPath]()
+                    let lastIndex = self.dataSource.count-MasterViewController.chunkSize
+                    for index in 0..<MasterViewController.chunkSize {
+                        indexArray.append(IndexPath(row: lastIndex+index, section: 0))
+                    }
+                    self.tableView.beginUpdates()
+                    self.tableView.insertRows(at: indexArray, with: .automatic)
+                    self.tableView.endUpdates()
+                }
+            }
         }
     }
-
-
+    
+    func configureCell(cell: UITableViewCell, object: Crypto?) {
+        guard let crypto = object else {
+            return
+        }
+        cell.textLabel!.text = crypto.name
+        cell.detailTextLabel?.text = crypto.price_usd
+    }
+    
+    @objc func forceUpdateTable(_ sender: Any) {
+        self.dataSource.removeAll()
+        loadObjects(start: 0)
+        tableView.refreshControl?.endRefreshing()
+    }
 }
 
